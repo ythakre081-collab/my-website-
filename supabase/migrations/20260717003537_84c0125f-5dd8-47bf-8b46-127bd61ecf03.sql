@@ -1,0 +1,22 @@
+
+CREATE INDEX IF NOT EXISTS idx_leads_bucket_created ON public.leads (bucket, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_leads_status_updated ON public.leads (status, updated_at DESC);
+CREATE INDEX IF NOT EXISTS idx_leads_assigned_created ON public.leads (assigned_to, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_hr_profiles_status ON public.hr_profiles (status);
+CREATE INDEX IF NOT EXISTS idx_withdraw_requests_status_created ON public.withdraw_requests (status, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_withdraw_requests_user_created ON public.withdraw_requests (user_id, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_marketing_status_created ON public.marketing_status (created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_marketing_status_creator ON public.marketing_status (created_by, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_attendance_date ON public.attendance (date DESC);
+CREATE INDEX IF NOT EXISTS idx_broker_reports_hr_created ON public.broker_reports (hr_id, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_client_reports_hr_created ON public.client_reports (hr_id, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_wallet_txns_created ON public.wallet_transactions (created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_daily_income_date ON public.daily_income (entry_date DESC);
+CREATE INDEX IF NOT EXISTS idx_activity_logs_actor_created ON public.activity_logs (actor_id, created_at DESC);
+ANALYZE public.leads;
+ANALYZE public.hr_profiles;
+ANALYZE public.wallet_transactions;
+ANALYZE public.withdraw_requests;
+ANALYZE public.daily_income;
+ANALYZE public.marketing_status;
+ANALYZE public.attendance;

@@ -1,0 +1,1 @@
+ALTER TABLE public.important_links ADD COLUMN IF NOT EXISTS help_video_url TEXT;
