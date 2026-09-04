@@ -1,0 +1,9 @@
+# YT Community Hub
+
+> Private creator CRM and HR management platform for the YT Community team — leads, earnings, attendance, and performance in one place.
+
+YT Community Hub is an invite-only application. Most pages require a signed-in, approved team account and are not intended for public browsing or crawling.
+
+## Pages
+
+- [Home](/): Public landing that redirects team members to the dashboard.

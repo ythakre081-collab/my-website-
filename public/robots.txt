@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /pending
+Disallow: /reset-password
+
+Sitemap: https://ytcommunity.online/sitemap.xml
